@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 1rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+/* @media (max-width:1500px){
+
+} */
+
+:root{
+    --main-color:#d90429;
+    --text-color:#020102;
+    --bg-color:#fff;
+}
+
+section{
+    padding: 4rem 0 2rem;
+}
+
+
+img{
+    width: 100%;
+}
+
+body{
+    color: var(--text-color);
+}
+
+.container{
+    max-width: 1068px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    display: flex;
+    padding: 20px;
+    background-color: #000;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+    align-items: center;
+}
+@media (max-width:980px){
+    header{
+        position: relative;
+
+    }
+
+
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 35px;
+    color: #f6f6f6;
+}
+
+
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-color);
+    display: none;
+}
+
+
+.navbar{
+    display: flex;
+    column-gap: 2rem;
+}
+
+.navbar a{
+    color: var(--text-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #f6f6f6;
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+.btn{
+    padding: 10px 22px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-weight: 400;
+}
+
+.btn:hover{
+    background: #fd052f;
+}
+
+.home{
+    max-width: 1600px;
+    margin: auto;
+    width: 100%;
+    min-height: 640px;
+    display: flex;
+    align-items: center;
+    background: url(kerela2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+}
+.hero-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    
+
+}
+.hero-content h1{
+    font-size: 4rem;
+    margin-bottom: 30px;
+}
+
+.hero-button{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--main-color);
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 1.6rem;
+    transition: all ease 0.3s;
+    
+}
+.hero-button:hover{
+    background-color: #333;
+}
+.sec_con h2{
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+.sec_con h3{
+    color: black;
+    font-size: 30px;                                                                                                                                                                                                                                                                                                                                                                                                                          
+    text-align: center;
+    margin-top: 5px;
+}
+.sec_con p{
+    color: black;
+    font-size: small;
+    text-align: center;
+    margin-top: 3px;
+}
+.parts-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.parts-container .box{
+    flex: 1 1 17rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #f6f6f6;
+    border-radius: 0.8rem;
+    border-color: transparent;
+    border-width: 0.1rem;
+    border-style: solid;
+    box-shadow: 0 0 15px gray;
+    overflow: hidden;
+
+    
+}
+.box .dnimg{
+    size: 1px;
+}
+
+.parts-container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    padding: 0;
+}
+
+.parts-container .box img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.parts-container .box h3{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 18px;
+}
+
+.parts-container .box h4{
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.parts-container .box span{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.parts-container .box .bx {
+    color: var(--main-color);
+    margin: 0.8rem 0;
+    text-align: center;
+}
+
+.parts-container .box .btn{
+   
+   text-align: center;
+}
+
+.parts-container .box .details{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 1.8rem;
+    right: 1rem;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.parts-container .box .details:hover{
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+
+  /* -------for pop up ------*/
+
+  .form-popup {
+
+    /* align-items: center; */
+    padding: 15px 30px;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    margin: 250px;
+    margin-top:50px;
+    margin-bottom: 40px;
+
+  }
+ 
+  
+  /* Add styles to the form container */
+  .form-container {
+   
+    max-width: 1200px;
+    padding: 10px;
+    background-color: white;
+   
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 2px;
+    margin: 2px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    margin-left: 40%;
+    border-radius: 10px;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+  .row{
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .row .input-group{
+    flex-basis: 48%;
+}
+.form-popup .image{
+    height: 252px;
+
+}
+
+
+
+/* contact form */
+
+  .contact{
+    padding: 80px;
+    text-align: center;
+    background-color: #F7F7F7;
+}
+.contact h3{
+    font-family: "Dongle-bold";
+    font-size: 3rem;
+    color: var(--main-color);
+    text-align: center;
+}
+.contact-info p{
+    font-family: "Dongle-regular";
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-family: 200;
+    padding-top: 20px;
+    text-align: center;
+}
+.contact-info ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+} 
+.contact-info li{
+    margin: 0 20px;
+    font-family: "Dongle-regular";
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+  
+}
+.contact-info li a{
+    text-decoration: none;
+    font-family: "Dongle-regular";
+    color: black;
+}
+.contact-info i{
+    font-size: 24px;
+    margin-right: 10px;
+}
+.form{
+    width: 100%;
+}
+input,textarea{
+    width: 70%;
+    padding: 10px;
+    margin: 20px 0;
+    border: none;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.1);
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-family: "Dongle-regular";
+}
+textarea{
+    height: 200px;
+}
+ /* button{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--main-color);
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-family: "Dongle-light";
+    font-size: 1.6rem;
+    border: none;
+    transition: all ease 0.3s;
+    text-align: center;
+    margin-left: 50%;
+}
+button:hover{
+    background-color: #333;
+} */
+
+
+/* -----footer ------*/
+
+.footer{
+    background: var(--text-color);
+    color: #f6f6f6;
+    border-top: 2px solid var(--main-color);
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.footer-container .logo{
+    color: var(--bg-color);
+    margin-bottom: 1rem;
+}
+
+.footer-container .footer-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+}
+
+.social a{
+    font-size: 24px;
+    color: var(--bg-color);
+    margin-right: 1rem;
+}
+/*---- responsiveness ---*/
+@media (max-width:95em){
+    .navbar{
+        gap: 3.4em;
+    }
+}
+
+
+@media only screen and (min-width:200px) and (max-width:767){
+    .parts-container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .box{
+        margin: 10px;
+    }
+}
+
+ .icon i{
+    display: none;
+}
+@media (max-width:940px){
+      .nav ul{
+        position: fixed;
+        top:80px;
+        left:4%;
+        width: 100%;
+        display: none;
+        height: 100vh;
+        text-align: left;
+        transition: all .5s ease;
+
+     }
+     
+     .nav ul li{
+        display: block;
+        margin: 40px 0;
+     }
+     .nav ul li a{
+        font-size: 20px;
+     }
+     
+    .icon i{
+        font-size: 27px;
+        display: block;
+        color: #ddd;
+        margin-left: 80px;
+    }
+   
+    .footer-box{
+        width: 100%;
+    }
+    #ft{
+        width: 100%;
+     }
+   
+    .form-popup .row{
+        display: block;
+        width: 100%;
+    }
+   
+
+}
+@media (max-width:500px){
+    .form-popup{
+        width: 100%;
+        margin: 10px;
+        padding: -4px 30px;
+    }
+    .form-popup .image{
+        height: 126px;
+    }
+    
+    .form-container input[type=text], .form-container input[type=password]{
+        margin: 0px 0 25px 0;
+        width: 228px;
+    }
+   
+}
+
+@media (max-width:500px){
+    html{
+        overflow-x: hidden;
+    }
+    body{
+        overflow-x: hidden;
+    }
+}
+
